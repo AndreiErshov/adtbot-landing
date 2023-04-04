@@ -1,0 +1,31 @@
+.wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    height: 100vh;
+    
+    .main {
+        padding: 0 40px;
+        width: 100%;
+        min-height: 100vh;
+
+        .head {
+            
+        }
+        
+        .body {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .wrapper {
+        .main {
+            padding: 0 15px;
+
+            .body {
+                padding-bottom: 200px;
+            }
+        }
+    }
+}

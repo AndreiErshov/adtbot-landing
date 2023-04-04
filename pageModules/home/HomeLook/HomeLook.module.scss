@@ -1,0 +1,96 @@
+.wrapper {
+    .in {
+        padding: 50px 0;
+        display: flex;
+        align-items: center;
+
+        .descr {
+            flex: 0 0 345px;
+            padding-right: 30px;
+
+            .title {
+                margin-bottom: 20px;
+            }
+
+            .text {
+                margin-bottom: 60px;
+            }
+
+            .nav {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin-left: -5px;
+                margin-right: -5px;
+
+                .item {
+                    margin: 0 5px;
+                    font-size: 30px;
+                    line-height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--black);
+                    transition: all .3s ease;
+
+                    &:active {
+                        transform: scale(0.95);
+                    }
+
+                    &:hover {
+                        color: var(--blue);
+                    }
+                }
+            }
+        }
+
+        .body {
+            flex: 0 0 840px;
+            border-radius: 20px;
+            overflow: hidden;
+
+            .slider {
+
+                .slide {
+                    height: 235px;
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: flex;
+                    }
+
+                    .action {
+                        position: absolute;
+                        bottom: 25px;
+                        right: 25px;
+                        box-shadow: 0px 0px 10px rgba(101, 101, 101, 0.25);
+                        border-radius: 99px;
+                        width: 92px;
+                        display: flex;
+                        background-color: #fff;
+                        overflow: hidden;
+
+                        .zoom, .blank {
+                            height: 32px;
+                            width: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 15px;
+                            line-height: 15px;
+                        }
+
+                        .blank {
+                            background-color: var(--yellow);
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
