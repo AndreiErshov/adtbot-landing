@@ -37,7 +37,7 @@ const Header:FC = () => {
                     </div>
                     <div className={styles.action}>
                         <div className={styles.item}>
-                            <Button text="Регистрация" variant={'simple'} style={{padding: '16px 25px'}}/>
+                            <Button text="Вход" variant={'simple'} style={{padding: '16px 25px'}}/>
                         </div>
                         <div className={styles.item}>
                             <Button text="Регистрация" variant={'blue'} style={{padding: '16px 25px'}}/>

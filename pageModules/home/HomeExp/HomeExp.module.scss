@@ -1,0 +1,52 @@
+.wrapper {
+
+    .in {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+        margin-left: -12px;
+        margin-right: -12px;
+
+        .part {
+            min-height: 200px;
+            margin: 0 12px;
+
+            &:nth-child(1) {
+                flex: 0 0 485px;
+            }
+
+
+            .main {
+                
+                .img {
+                    margin-bottom: 25px;
+                }
+
+                .title {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .ex {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .body {
+                    padding-right: 15px;
+
+                    .title {
+                        margin-bottom: 20px;
+                    }
+                }
+
+                &:first-child {
+                    margin-bottom: 40px;
+                }
+
+                // display: flex;
+
+            }
+        }
+    }
+}

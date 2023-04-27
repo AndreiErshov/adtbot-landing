@@ -1,0 +1,37 @@
+.wrapper {
+
+    .list {
+        display: flex;
+        align-items: flex-start;
+        // justify-content: space-between;
+        overflow-x: auto;
+        padding: 20px 0;
+        margin-left: -5px;
+        margin-right: -5px;
+        
+        .item {
+            // width: calc(100% / 4.1);
+            margin: 0 5px;    
+            width: calc((100% / 4) - 10px);
+        }
+    }
+
+    .action {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 620px) {
+    .list {
+        margin-left: 0;
+        margin-right: 0;
+        flex-wrap: wrap;
+
+        .item {
+            width: 100%;
+            margin-bottom: 20px;
+
+            
+        }
+    }
+}

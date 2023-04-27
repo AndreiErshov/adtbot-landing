@@ -1,0 +1,32 @@
+.wrapper {
+
+    .in {
+        padding: 50px 0;
+        background-color: var(--blue);
+        border-radius: 18px;
+
+        .img {
+            width: 50%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                display: flex;
+            }
+        }
+        .body {
+            width: 50%;
+            color: #fff;
+
+            .title {
+                margin-bottom: 20px;
+            }
+
+            .text {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+    }
+}

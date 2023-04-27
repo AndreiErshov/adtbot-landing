@@ -7,6 +7,9 @@ import Image from 'next/image';
 import {FC, useRef, useState} from 'react';
 import {HiArrowLongRight, HiArrowLongLeft} from 'react-icons/hi2';
 import IconZoom from '@/icons/IconZoom';
+import IconButton from '@/components/IconButton/IconButton';
+import IconExport from '@/icons/IconExport';
+
 
 const HomeLook:FC = () => {
     const [swiper, setSwiper] = useState<any>(null)
@@ -46,21 +49,21 @@ const HomeLook:FC = () => {
                                 <Image src={img1} alt=''/>
                                 <div className={styles.action}>
                                     <button className={styles.zoom}><IconZoom color='var(--yellow)'/></button>
-                                    <button className={styles.blank}></button>
+                                    <button className={styles.blank}><IconExport color="#fff"/></button>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide className={styles.slide}>
                                 <Image src={img2} alt=''/>
                                 <div className={styles.action}>
-                                    <button className={styles.zoom}></button>
-                                    <button className={styles.blank}></button>
+                                <button className={styles.zoom}><IconZoom color='var(--yellow)'/></button>
+                                    <button className={styles.blank}><IconExport color="#fff"/></button>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide className={styles.slide}>
                                 <Image src={img2} alt=''/>
                                 <div className={styles.action}>
-                                    <button className={styles.zoom}></button>
-                                    <button className={styles.blank}></button>
+                                    <button className={styles.zoom}><IconZoom color='var(--yellow)'/></button>
+                                    <button className={styles.blank}><IconExport color="#fff"/></button>
                                 </div>
                             </SwiperSlide>
                         </Swiper>
