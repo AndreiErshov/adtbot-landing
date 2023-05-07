@@ -1,0 +1,21 @@
+.wrapper  {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    .btn {
+        border-radius: 100%;
+        width: 42px;
+        height: 42px;
+        background-color: var(--blue);
+        color: #fff;
+        font-size: 25px;
+        line-height: 25px;
+        box-shadow: 0px 4px 30px rgba(111, 145, 238, 0.4);
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: var(--yellow);
+        }
+    }
+}

@@ -8,6 +8,11 @@ import HomeDemo from '@/pageModules/home/HomeDemo/HomeDemo';
 import HomeExchange from '@/pageModules/home/HomeExchange/HomeExchange';
 import HomeRevs from '@/pageModules/home/HomeRevs/HomeRevs';
 import HomePricing from '@/pageModules/home/HomePricing/HomePricing';
+import HomeSec from '@/pageModules/home/HomeSec/HomeSec';
+import HomeFaq from '@/pageModules/home/HomeFaq/HomeFaq';
+import HomeDb from '@/pageModules/home/HomeDb/HomeDb';
+
+
 const HomePage:FC = () => {
     return (
         <PageLayout>
@@ -34,6 +39,15 @@ const HomePage:FC = () => {
             </section>
             <section>
                 <HomePricing/>
+            </section>
+            <section>
+                <HomeSec/>
+            </section>
+            <section>
+                <HomeFaq/>
+            </section>
+            <section>
+                <HomeDb/>
             </section>
         </PageLayout>
     )

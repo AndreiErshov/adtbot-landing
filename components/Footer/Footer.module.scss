@@ -1,6 +1,96 @@
 .wrapper {
+    background-color: #1A2751;
+    color: #fff;
 
+    
     .in {
+        padding: 275px 0 30px;
         
+        .main {
+            display: flex;
+            margin-left: -20px;
+            margin-right: -20px;
+
+            .part {
+                width: calc((100% / 4) - 40px);
+                margin: 0 20px;
+                margin-bottom: 40px;
+            }
+
+            .pre {
+
+                .logo {
+                    margin-bottom: 20px;
+                    width: 120px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        display: flex;
+                    }
+                }
+                .text {
+                    margin-bottom: 20px;
+                }
+                .soc {
+                    display: flex;
+                    align-items: center;
+                    margin-left: -5px;
+                    margin-right: -5px;
+
+                    .item {
+                        margin: 0 5px;
+                        width: 30px;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #fff;
+                        border-radius: 100%;
+
+                        img {
+                            // width: 100%;
+                            // height: 100%;
+                            // object-fit: contain;
+                            display: flex;
+                        }
+                    }
+                }
+            }
+
+            .nav {
+                .head {
+                    font-size: 18px;
+                    line-height: 28px;
+                    margin-bottom: 12px;
+                }
+                .list {
+                    .item {
+                        margin-bottom: 10px;
+                        a {
+                            color: #fff;
+                            transition: all .3s ease;
+
+                            &:hover {
+                                color: var(--blue);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .ex {
+            font-size: 14px;
+            line-height: 19px;
+            p {
+                margin-bottom: 10px;
+            }
+        }
     }
 }

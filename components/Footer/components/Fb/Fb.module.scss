@@ -1,0 +1,48 @@
+.wrapper {
+    margin-bottom: -200px;
+    position: relative;
+    z-index: 2;
+    .in {
+        padding: 40px 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--yellow);
+        border-radius: 25px;
+    
+        .img {
+            flex: 0 0 275px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                display: flex;
+            }
+        }
+
+        .body {
+            width: 100%;
+            padding-left: 50px;
+
+            .title {
+                margin-bottom: 26px;
+                color: #1A2751;
+            }
+            .text {
+                color: #1A2751;
+                line-height: 28px;
+                font-size: 18px;
+                letter-spacing: -0.0026em;
+                margin-bottom: 30px;
+            }
+            .action {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+
+            }
+        }
+    }
+}
