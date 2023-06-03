@@ -19,16 +19,16 @@ const Header:FC = () => {
                         </Link>                      
                         <ul className={styles.nav}>
                             <li className={styles.item}>
-                                <Link href={'/'}>Демо</Link>
+                                <Link href={'/demo'}>Демо</Link>
                             </li>
                             <li className={styles.item}>
-                                <Link href={'/'}>Тарифы</Link>                            
+                                <Link href={'/pricing'}>Тарифы</Link>                            
                             </li>
                             <li className={styles.item}>
                                 <Link href={'/'}>База знаний</Link>
                             </li>
                             <li className={styles.item}>
-                                <Link href={'/'}>Контакты</Link>
+                                <Link href={'/contacts'}>Контакты</Link>
                             </li>
                         </ul>  
                         <div className={styles.lang}>

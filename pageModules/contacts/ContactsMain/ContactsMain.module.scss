@@ -1,0 +1,79 @@
+.wrapper {
+    .in {
+        padding: 50px 0;
+        display: flex;
+        align-self: flex-start;
+        margin-left: -20px;
+        margin-right: -20px;
+
+        .descr {
+            width: 50%;
+            padding: 0 20px;
+            padding-right: 130px;
+
+            .title {
+                margin-bottom: 20px;
+            }
+
+            .text {
+                margin-bottom: 25px;
+            }
+
+            .info {
+
+                .info_item {
+                    margin-bottom: 15px;
+                    a {
+                        position: relative;
+                        padding-left: 25px;
+                        color: var(--text);
+                        &:after {
+                            position: absolute;
+                            width: 15px;
+                            height: 15px;
+                            content: '';
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: contain;
+                            left: 0;top: calc(50% - 7.5px);
+                        }
+                    }
+
+                    &:nth-child(1) {
+                        a {
+                            &:after {
+                                background-image: url('../../../public/assets/contacts-tg.svg');
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        a {
+                            &:after {
+                                background-image: url('../../../public/assets/contacts-email.svg');
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .main {
+            width: 50%;
+            padding: 0 20px;
+
+            .title {
+                margin-bottom: 20px;
+            }
+
+            .action {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .captcha {
+
+                }
+            }
+        }
+    }
+}
