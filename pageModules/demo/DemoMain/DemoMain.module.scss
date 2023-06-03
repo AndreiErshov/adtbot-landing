@@ -1,0 +1,39 @@
+.wrapper {
+    .in {
+        padding: 50px 0;
+        display: flex;
+        align-items: flex-start;
+
+        .descr {
+            flex: 0 0 410px;
+            padding-right: 60px;
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                margin-bottom: 20px;
+            }
+
+            .text {
+                margin-bottom: 50px;
+            }
+
+            .info {
+                .item {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .img {
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                display: flex;
+            }
+        }
+    }
+}
