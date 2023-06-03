@@ -21,7 +21,7 @@ const HomeHero:FC = () => {
                             </p>
                         </div>
                         <div className={styles.action}>
-                            <div className={styles.item}><Button text='Бесплатный доступ' variant={'default'}/></div>
+                            <div className={styles.item}><Button onClick={() => window.open('https://adtbot-web.netlify.app/', '_blank')} text='Бесплатный доступ' variant={'default'}/></div>
                             <div className={styles.item}><Button text='Посмотреть демо' variant='simple'/></div>
                         </div>
                     </div>

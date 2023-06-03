@@ -1,0 +1,24 @@
+.wrapper {
+
+    .title {
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 22px;
+    }
+
+    .body {
+        .fg {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 5px;
+            .lk {
+                font-size: 12px !important;
+                line-height: 16px;
+            }
+        }
+        .ex {
+            text-align: center;
+        }
+    }
+}

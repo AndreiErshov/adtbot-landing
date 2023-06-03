@@ -28,6 +28,7 @@ const Fb = () => {
                         </div>
                         <div className={styles.action}>
                             <Button
+                                onClick={() => window.open('https://adtbot-web.netlify.app/', '_blank')}
                                 text='Попробовать бесплатно'
                                 variant={'blue'}
                                 />

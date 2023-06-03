@@ -27,7 +27,7 @@ const Footer = () => {
                                     ADTBot — мониторинг анонсов листингов 10 топовых бирж с периодичностью 5 запросов в секунду 24/7 и автоматической покупкой на других биржах в момент анонса.
                                     </p>
                                 </div>
-                                <div className={styles.soc}>
+                                {/* <div className={styles.soc}>
                                     <Link className={styles.item} href={'/'}>
                                         <Image src={telegram} alt=''/>
                                     </Link>
@@ -37,31 +37,31 @@ const Footer = () => {
                                     <Link className={styles.item} href={'/'}>
                                         <Image src={youtube} alt=''/>
                                     </Link>
-                                </div>
+                                </div> */}
                             </div>
                             <div className={`${styles.part} ${styles.nav}`}>
                                 <h5 className={styles.head}>Ресурсы</h5>
                                 <ul className={styles.list}>
                                     <li className={styles.item}><Link href={'/'}>База знаний</Link></li>
-                                    <li className={styles.item}><Link href={'/'}>Демо</Link></li>
-                                    <li className={styles.item}><Link href={'/'}>Тарифы</Link></li>
-                                    <li className={styles.item}><Link href={'/'}>Партнерская программа</Link></li>
-                                    <li className={styles.item}><Link href={'/'}>Контакты</Link></li>
+                                    <li className={styles.item}><Link href={'/demo'}>Демо</Link></li>
+                                    <li className={styles.item}><Link href={'/pricing'}>Тарифы</Link></li>
+                                    {/* <li className={styles.item}><Link href={'/'}>Партнерская программа</Link></li> */}
+                                    <li className={styles.item}><Link href={'/contacts'}>Контакты</Link></li>
                                 </ul>
                             </div>
                             <div className={`${styles.part} ${styles.nav}`}>
                                 <h5 className={styles.head}>Информация</h5>
                                 <ul className={styles.list}>
-                                    <li className={styles.item}><Link href={'/'}>Политика конфиденциальности</Link></li>
-                                    <li className={styles.item}><Link href={'/'}>Пользовательское соглашение</Link></li>
-                                    <li className={styles.item}><Link href={'/'}>Политика использования Cookie</Link></li>
+                                    <li className={styles.item}><Link href={'/privacy'}>Политика конфиденциальности</Link></li>
+                                    <li className={styles.item}><Link href={'/tos'}>Пользовательское соглашение</Link></li>
+                                    <li className={styles.item}><Link href={'/cookie_policy'}>Политика использования Cookie</Link></li>
                                 </ul>
                             </div>
                             <div className={`${styles.part} ${styles.nav}`}>
                                 <h5 className={styles.head}>Поддержка</h5>
                                 <ul className={styles.list}>
-                                    <li className={styles.item}><Link href={'/'}>@adtbot_support</Link></li>
-                                    <li className={styles.item}><Link href={'/'}>support@adtbot.com</Link></li>
+                                    <li className={styles.item}><a href={'https://t.me/adtbot_support'} target='_blank'>@adtbot_support</a></li>
+                                    <li className={styles.item}><a href={'mailto:support@adtbot.com'}>support@adtbot.com</a></li>
                                 </ul>
                             </div>
                         </div>
