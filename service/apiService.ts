@@ -1,6 +1,6 @@
 import endpoints from "./endpoints";
 import checkAuth from "./checkAuth";
-import { IBot } from "@/models/IBot";
+
 
 const headers = {
     'Content-type': 'application/json',
@@ -553,24 +553,7 @@ class ApiService {
         }
     }
 
-    editBot = async (body: {
-        bot_id: number,
-        bot_info: IBot
-    }, token: TokenType) => {
-        try {
-            let res = await fetch(endpoints.editBot, {
-                method: "POST",
-                headers: {
-                    ...headers,
-                    'Authorization': `Bearer ${token}`
-                },
-                body: JSON.stringify(body)
-            })
-            return await checkAuth(res)
-        } catch(err) {
-            console.log(err)
-        }
-    }
+    
 
     changeTarif = async (id: number, token: TokenType) => {
         try {
