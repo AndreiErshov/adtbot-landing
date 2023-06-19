@@ -21,6 +21,33 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .wrapper {
+        .list {
+            
+            .item {
+                width: 280px;
+                flex: 0 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        .list {
+            flex-wrap: wrap;
+            margin-left: 0;
+            margin-right: 0;
+
+            .item {
+                width: 100%;
+                flex: unset;
+            }
+        }
+    }
+}
+
 @media (max-width: 620px) {
     .list {
         margin-left: 0;

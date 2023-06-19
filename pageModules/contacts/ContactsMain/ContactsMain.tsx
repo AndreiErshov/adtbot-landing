@@ -32,13 +32,13 @@ const ContactsMain = () => {
                         <h2 className={styles.title}>Форма обратной связи</h2>
                         <div className={styles.body}>
                             <Row gutter={[20,20]}>
-                                <Col span={12}>
+                                <Col md={12} span={24}>
                                     <Input
                                         label='Имя'
                                         placeholder='Bessie Cooper'
                                         />
                                 </Col>
-                                <Col span={12}>
+                                <Col md={12} span={24}>
                                     <Input
                                         label='E-mail'
                                         placeholder='E-mail Bessie Cooper'

@@ -49,3 +49,45 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+
+    .wrapper {
+
+        .in {
+
+            .body {
+                .part {
+                    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        .in {
+            padding: 25px 0;
+
+            .title {
+                margin-bottom: 20px;
+                font-size: 22px;
+                line-height: 30px;
+            }
+
+            .body {
+                flex-wrap: wrap;
+
+                .part {
+                    max-width: unset;
+                    width: 100%;
+                    margin-bottom: 15px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

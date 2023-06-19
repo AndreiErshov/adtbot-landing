@@ -21,8 +21,16 @@ const HomeDb = () => {
                     </h2>
                     <div className={styles.body}>
                         <Swiper
-                            slidesPerView={3}
+                            slidesPerView={1}
                             spaceBetween={25}
+                            breakpoints={{
+                                1200: {
+                                    slidesPerView: 3
+                                },
+                                768: {
+                                    slidesPerView: 2
+                                }
+                            }}
                             className={styles.slider}
                             >
                             <SwiperSlide className={styles.slide}>

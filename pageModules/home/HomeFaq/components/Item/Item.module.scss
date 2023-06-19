@@ -58,3 +58,22 @@
     }
 
 }
+
+@media (max-width: 768px) {
+    .wrapper {
+
+        .head {
+            .label {
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+
+        .body {
+            .in {
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+    }
+}

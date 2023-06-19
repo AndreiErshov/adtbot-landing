@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.19",
     "@next/font": "13.2.4",
     "@types/node": "18.15.11",
     "@types/nprogress": "^0.2.0",

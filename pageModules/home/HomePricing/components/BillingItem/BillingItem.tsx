@@ -3,7 +3,6 @@ import { billingItemPropsTypes } from '../../types';
 import {FC} from 'react';
 import { Row, Col } from 'antd';
 import Button from '@/components/Button/Button';
-import Link from 'next/link';
 import Image from 'next/image';
 
 const BillingItem:FC<billingItemPropsTypes> = ({

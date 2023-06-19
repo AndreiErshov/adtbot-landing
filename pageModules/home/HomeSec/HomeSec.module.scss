@@ -37,3 +37,39 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .wrapper {
+
+        .in {
+            flex-wrap: wrap;
+
+            .img {
+                flex: unset;
+                width: 100%;
+            }
+            .body {
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 25px 0;
+        
+        .in {
+            padding: 20px;
+
+            .body {
+                padding: 0;
+
+                .title {
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}

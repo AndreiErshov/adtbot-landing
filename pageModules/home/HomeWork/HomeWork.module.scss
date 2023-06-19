@@ -11,3 +11,27 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .wrapper {
+        .in {
+            .body {
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        .in {
+            padding: 25px 0;
+
+            .title {
+                margin-bottom: 30px;
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+    }
+}

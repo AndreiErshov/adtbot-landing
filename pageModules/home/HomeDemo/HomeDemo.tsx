@@ -7,7 +7,8 @@ import IconButton from '@/components/IconButton/IconButton';
 import SliderNav from '@/components/SliderNav/SliderNav';
 import { useRef, useState } from 'react';
 import { SwiperOptions } from 'swiper';
-
+import {HiOutlineExternalLink} from 'react-icons/hi';
+import {IoPlayOutline} from 'react-icons/io5';
 
 const HomeDemo = () => {
     const [swiper, setSwiper] = useState<any>(null)
@@ -17,23 +18,35 @@ const HomeDemo = () => {
             <Container>
                 <div className={styles.in}>
                     <div className={styles.main}>
-                        <h2 className={styles.title}>
-                            Как выглядит бот
-                        </h2>
-                        <div className={styles.text}>
-                            <p>
-                            Мы разработали максимально удобную и простую в использовании платформу для создания и управления ботами
-                            </p>
+                        <div className={styles.main_top}>
+                            <h2 className={styles.title}>
+                                Как выглядит бот
+                            </h2>
+                            <div className={styles.text}>
+                                <p>
+                                Мы разработали максимально удобную и простую в использовании платформу для создания и управления ботами
+                                </p>
+                            </div>
+                            <div className={styles.nav}>
+                                <SliderNav  
+                                    onNext={() => swiper && swiper.slideNext()}
+                                    onPrev={() => swiper && swiper?.slidePrev()}
+                                    />
+                            </div>
                         </div>
+                        
                         <div className={styles.action}>
                             <div className={styles.pop}>
+                                <span><IoPlayOutline/></span>
                                 Видеопрезентация бота
                             </div>
                             <div className={styles.demo}>
                                 <div className={styles.head}>Демо-доступ</div>
                                 <div className={styles.text}>
-                                Хотите рассмотреть более подробно? <br/>
-                                Пожалуйста!
+                                    <a href="#" target={'_blank'}>
+                                    Хотите рассмотреть более подробно? <br/>
+                                    Пожалуйста! <span><HiOutlineExternalLink/></span>
+                                    </a>
                                 </div>
                             </div>
                         </div>

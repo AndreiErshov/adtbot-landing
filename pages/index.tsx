@@ -34,12 +34,12 @@ const HomePage:FC = () => {
             <section>
                 <HomeExchange/>
             </section>
-            <section>
+            {/* <section>
                 <HomeRevs/>
-            </section>
-            <section>
+            </section> */}
+            {/* <section>
                 <HomePricing/>
-            </section>
+            </section> */}
             <section>
                 <HomeSec/>
             </section>

@@ -94,3 +94,44 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+
+    .wrapper {
+
+        .in {
+            flex-wrap: wrap;
+
+            .descr {
+                // flex: unset;
+                // width: 100%;
+                padding: 0;
+
+                .nav {
+                    display: none;
+                }
+            }
+
+            .body {
+                flex: unset;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+
+        .in {
+
+            .descr {
+                .title {
+                    font-size: 22px;
+                    line-height: 30px;  
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

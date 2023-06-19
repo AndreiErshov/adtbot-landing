@@ -18,7 +18,11 @@ const HomeWork = () => {
                         <Row gutter={[25,25]}>
                             {
                                 list?.map((item,index) => (
-                                    <Col span={6} key={index}>
+                                    <Col 
+                                        span={24}
+                                        md={12}
+                                        lg={6} 
+                                        key={index}>
                                         <Card {...item}/>
                                     </Col>
                                 ))

@@ -4,12 +4,11 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import img1 from '@/public/assets/look-1.png';
 import img2 from '@/public/assets/look-2.png';
 import Image from 'next/image';
-import {FC, useRef, useState} from 'react';
+import {FC, useState} from 'react';
 import {HiArrowLongRight, HiArrowLongLeft} from 'react-icons/hi2';
 import IconZoom from '@/icons/IconZoom';
-import IconButton from '@/components/IconButton/IconButton';
 import IconExport from '@/icons/IconExport';
-
+import FancyboxWrapper from '@/components/FancyboxWrapper/FancyboxWrapper';
 
 const HomeLook:FC = () => {
     const [swiper, setSwiper] = useState<any>(null)
@@ -43,7 +42,12 @@ const HomeLook:FC = () => {
                     <div className={styles.body}>
                         <Swiper 
                             onSwiper={setSwiper}
-                            slidesPerView={2}
+                            slidesPerView={1}
+                            breakpoints={{ 
+                                1200: {
+                                    slidesPerView: 2
+                                }
+                            }}
                             className={styles.slider}>
                             <SwiperSlide className={styles.slide}>
                                 <Image src={img1} alt=''/>

@@ -94,3 +94,37 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+
+    .wrapper {
+
+        .in {
+
+            .main {
+                flex-wrap: wrap;
+
+                .part {
+                    width: calc(50% - 40px);
+                }
+            }
+
+            .ex {
+
+            }
+
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        .in {
+            .main {
+                .part {
+                    width: calc(100% - 40px);
+                }
+            }
+        }
+    }
+}
