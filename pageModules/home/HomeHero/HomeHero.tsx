@@ -4,9 +4,9 @@ import Container from '@/components/Container/Container';
 import Button from '@/components/Button/Button';
 import Image from 'next/image';
 import img from '@/public/assets/hero-img.png';
-
+import Router from 'next/router';
 const HomeHero:FC = () => {
-
+    
     return (
         <div className={styles.wrapper}>
             <Container>
@@ -22,7 +22,7 @@ const HomeHero:FC = () => {
                         </div>
                         <div className={styles.action}>
                             <div className={styles.item}><Button onClick={() => window.open('https://adtbot-web.netlify.app/', '_blank')} text='Бесплатный доступ' variant={'default'}/></div>
-                            <div className={styles.item}><Button text='Посмотреть демо' variant='simple'/></div>
+                            <div className={styles.item}><Button onClick={() => Router.push('/demo')} text='Посмотреть демо' variant='simple'/></div>
                         </div>
                     </div>
                     <div className={`${styles.img} ${styles.part}`}>

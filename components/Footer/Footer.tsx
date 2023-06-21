@@ -42,7 +42,7 @@ const Footer = () => {
                             <div className={`${styles.part} ${styles.nav}`}>
                                 <h5 className={styles.head}>Ресурсы</h5>
                                 <ul className={styles.list}>
-                                    <li className={styles.item}><Link href={'/'}>База знаний</Link></li>
+                                    <li className={styles.item}><a target={'_blank'} href={'https://adtbot.com/knowledge-base/'}>База знаний</a></li>
                                     <li className={styles.item}><Link href={'/demo'}>Демо</Link></li>
                                     <li className={styles.item}><Link href={'/pricing'}>Тарифы</Link></li>
                                     {/* <li className={styles.item}><Link href={'/'}>Партнерская программа</Link></li> */}

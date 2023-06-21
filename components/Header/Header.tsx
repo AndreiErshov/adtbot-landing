@@ -11,7 +11,7 @@ import { useRouter } from "next/router";
 
 const Header:FC = () => {
     const router = useRouter()
-
+    const [shadow, setShadow] = useState(false)
     const [sidebarOpen, setSidebarOpen] = useState(false)
 
 
@@ -19,11 +19,25 @@ const Header:FC = () => {
         setSidebarOpen(false)
     }, [router])
 
+    const toggleHeader = () => {
+        if(document.documentElement.scrollTop > 10) {
+            setShadow(true)
+        } else {
+            setShadow(false)
+        }
+    }
+    useEffect(() => {
+        document.addEventListener('scroll', toggleHeader)
+
+        return () => {
+            document.removeEventListener('scroll', toggleHeader)
+        }
+    }, [])
 
     return (
         <>
               <Sidebar open={sidebarOpen}/>
-              <header className={styles.wrapper}>
+              <header className={`${styles.wrapper} ${shadow ? styles.shadow : ''}`}>
           
 
           <Container>
@@ -41,7 +55,7 @@ const Header:FC = () => {
                               <Link href={'/pricing'}>Тарифы</Link>                            
                           </li>
                           <li className={styles.item}>
-                              <Link href={'/'}>База знаний</Link>
+                              <a href={'https://adtbot.com/knowledge-base/'} target="_blank">База знаний</a>
                           </li>
                           <li className={styles.item}>
                               <Link href={'/contacts'}>Контакты</Link>
@@ -54,10 +68,10 @@ const Header:FC = () => {
                   <div className={styles.action}>
                       <div className={styles.item}>
                           <Button 
-                              onClick={() => window.open('https://adtbot-web.netlify.app/', '_blank')}
+                              onClick={() => window.open('https://adtbot-web.netlify.app/auth/login', '_blank')}
                               text="Вход" 
                               variant={'simple'} 
-                              style={{padding: '16px 25px'}}/>
+                              style={{padding: '16px 25px', border: 'none'}}/>
                       </div>
                       <div className={styles.item}>
                           <Button 
@@ -89,7 +103,7 @@ const Header:FC = () => {
                                   onClick={() => window.open('https://adtbot-web.netlify.app/', '_blank')}
                                   text="Вход" 
                                   variant={'simple'} 
-                                  style={{padding: '16px 25px'}}/>
+                                  style={{padding: '16px 25px', border: 'none'}}/>
                           </div>
                           <div className={styles.item}>
                               <Button 
