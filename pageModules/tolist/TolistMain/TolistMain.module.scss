@@ -24,3 +24,27 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .wrapper {
+        .in {
+            .img {
+                height: 400px;
+            }
+            .title {
+                font-size: 22px;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .wrapper {
+        .in {
+            .img {
+                height: 250px;
+            }
+        }
+    }
+}
