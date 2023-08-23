@@ -13,7 +13,7 @@ const Header:FC = () => {
     const router = useRouter()
     const [shadow, setShadow] = useState(false)
     const [sidebarOpen, setSidebarOpen] = useState(false)
-
+    
 
     useEffect(() => {
         setSidebarOpen(false)
@@ -48,16 +48,19 @@ const Header:FC = () => {
                           <Image src={logo} width={122} height={30} alt="adtbot"/>
                       </Link>                      
                       <ul className={styles.nav}>
-                          <li className={styles.item}>
+                          <li className={`${styles.item} ${router?.pathname === '/demo' ? styles.active : ''}`}>
                               <Link href={'/demo'}>Демо</Link>
                           </li>
-                          <li className={styles.item}>
+                          <li className={`${styles.item} ${router?.pathname === '/pricing' ? styles.active : ''}`}>
                               <Link href={'/pricing'}>Тарифы</Link>                            
+                          </li>
+                          <li className={`${styles.item} ${router?.pathname === '/guide' ? styles.active : ''}`}>
+                              <Link href={'/guide'}>Гайд</Link>                            
                           </li>
                           <li className={styles.item}>
                               <a href={'https://adtbot.com/knowledge-base/'} target="_blank">База знаний</a>
                           </li>
-                          <li className={styles.item}>
+                          <li className={`${styles.item} ${router?.pathname === '/contacts' ? styles.active : ''}`}>
                               <Link href={'/contacts'}>Контакты</Link>
                           </li>
                       </ul>  

@@ -6,6 +6,17 @@
     }
 }
 
+.modal.blue {
+    .ant-modal-content {
+        background-color: var(--blue);
+    }
+}
+.modal.dark {
+    .ant-modal-content {
+        background-color: #1A2751;
+    }
+}
+
 .ant-modal {
 
     .ant-modal-content {
@@ -33,6 +44,8 @@
     }
 
 }
+
+
 
 @media (max-width: 620px) {
     .ant-modal {

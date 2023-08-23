@@ -6,10 +6,6 @@ import {useEffect} from 'react';
 
 const Sidebar = ({open}: {open: boolean}) => {
     const {asPath} = useRouter()
-    
-    useEffect(() => {
-        console.log(asPath)
-    }, [asPath])
 
 
     return (
@@ -18,6 +14,7 @@ const Sidebar = ({open}: {open: boolean}) => {
                 <ul className={styles.menu}>
                     <li className={styles.item}><Link href={'/demo'}>Демо</Link></li>
                     <li className={styles.item}><Link href={'/pricing'}>Тарифы</Link></li>
+                    <li className={styles.item}><Link href={'/guide'}>Гайд</Link></li>
                     <li className={styles.item}><a href={'#'} target={'_blank'}>База знаний</a></li>
                     <li className={styles.item}><Link href={'/contacts'}>Контакты</Link></li>
                 </ul>

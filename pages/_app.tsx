@@ -7,25 +7,39 @@ import 'nprogress/nprogress.css';
 import { useWindowSize } from 'usehooks-ts';
 import UpBtn from '@/components/UpBtn/UpBtn';
 import {useEffect, useState} from 'react';
+import { AnimatePresence } from 'framer-motion';
+import ExitModal from '@/modals/ExitModal/ExitModal';
+import GuideModal from '@/modals/GuideModal/GuideModal';
+
 NProgress.configure({ showSpinner: false })
 Router.events.on('routeChangeStart', () => NProgress.start()); 
 Router.events.on('routeChangeComplete', () => NProgress.done()); 
 Router.events.on('routeChangeError', () => NProgress.done());
-import { AnimatePresence } from 'framer-motion';
- 
-export default function App({ Component, pageProps }: AppProps) {
 
+let f = false
+
+export default function App({ Component, pageProps }: AppProps) {
+  const [exit, setExit] = useState(false)
   const [up, setUp] = useState(false)
+  const [guide, setGuide] = useState(true)
+  
 
   const getTop = () => {
     if(document.documentElement?.scrollTop > 20) {
       setUp(true)
     } else setUp(false)
   }
+  
+
+  const showExit = (e:any) => {
+    if(e.y <= 0 && !f) {
+      setExit(true)
+    }
+  }
 
   useEffect(() => {
     document.addEventListener('scroll', getTop)
-
+    document.addEventListener('mouseout', showExit)
     return () => {
       document.removeEventListener('scroll', getTop)
     }
@@ -34,6 +48,17 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Component {...pageProps} />
+      <ExitModal  
+        open={exit}
+        onCancel={() => {
+          setExit(false)
+          f = true
+        }}
+        />
+      <GuideModal
+        open={guide}
+        onClose={() => setGuide(false)}
+        />
       <AnimatePresence>
       {
         up ? <UpBtn/> : null
