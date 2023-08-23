@@ -75,7 +75,8 @@ const BillingItem:FC<billingItemPropsTypes> = ({
                     </Col>
                     <Col span={24}>
                         <Button
-                            onClick={() => onSelect && onSelect(id)}
+                            // onClick={() => onSelect && onSelect(id)}
+                            onClick={() => window.open('https://console.adtbot.com/auth/join', '_blank')}
                             disabled={isCurrent}
                             load={load}
                             text={isCurrent ? 'Текущий тариф' : 'Выбрать тариф'}

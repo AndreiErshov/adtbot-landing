@@ -1,0 +1,26 @@
+.wrapper {
+    .in {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .img {
+            height: 600px;
+            margin-bottom: 40px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                display: flex;
+            }
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .text {
+            text-align: center;
+        }
+    }
+}
