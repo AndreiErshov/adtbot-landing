@@ -8,6 +8,8 @@ import Image from 'next/image';
 import telegram from '@/public/assets/telegram.svg';
 import twitter from '@/public/assets/twitter.svg';
 import youtube from '@/public/assets/youtube.svg';
+import IconTelegram from '@/icons/IconTelegram';
+import IconSMS from '@/icons/IconSMS';
 
 const Footer = () => {
 
@@ -18,7 +20,7 @@ const Footer = () => {
                 <Container>
                     <div className={styles.in}>
                         <div className={styles.main}>
-                            <div className={`${styles.pre} ${styles.part}`}>
+                            <div className={`${styles.part} ${styles.nav}`} style={{width: '367px'}}>
                                 <Link href={'/'} className={styles.logo}>
                                     <Image src={logo} alt='adtbot'/>
                                 </Link>
@@ -39,7 +41,7 @@ const Footer = () => {
                                     </Link>
                                 </div> */}
                             </div>
-                            <div className={`${styles.part} ${styles.nav}`}>
+                            <div className={`${styles.part} ${styles.nav}`} style={{width: '200px'}}>
                                 <h5 className={styles.head}>Ресурсы</h5>
                                 <ul className={styles.list}>
                                     <li className={styles.item}><a target={'_blank'} href={'https://adtbot.com/knowledge-base/'}>База знаний</a></li>
@@ -49,7 +51,7 @@ const Footer = () => {
                                     <li className={styles.item}><Link href={'/contacts'}>Контакты</Link></li>
                                 </ul>
                             </div>
-                            <div className={`${styles.part} ${styles.nav}`}>
+                            <div className={`${styles.part} ${styles.nav}`} style={{width: '300px'}}>
                                 <h5 className={styles.head}>Информация</h5>
                                 <ul className={styles.list}>
                                     <li className={styles.item}><Link href={'/privacy'}>Политика конфиденциальности</Link></li>
@@ -57,11 +59,11 @@ const Footer = () => {
                                     <li className={styles.item}><Link href={'/cookie_policy'}>Политика использования Cookie</Link></li>
                                 </ul>
                             </div>
-                            <div className={`${styles.part} ${styles.nav}`}>
+                            <div className={`${styles.part} ${styles.nav}`} style={{width: '173px'}}>
                                 <h5 className={styles.head}>Поддержка</h5>
                                 <ul className={styles.list}>
-                                    <li className={styles.item}><a href={'https://t.me/adtbot_support'} target='_blank'>@adtbot_support</a></li>
-                                    <li className={styles.item}><a href={'mailto:support@adtbot.com'}>support@adtbot.com</a></li>
+                                    <li className={styles.item}><a className={styles.flex_icon} href={'https://t.me/adtbot_support'} target='_blank'><IconTelegram/><div style={{marginLeft: '8px'}}>@adtbot_support</div></a></li>
+                                    <li className={styles.item}><a className={styles.flex_icon} href={'mailto:support@adtbot.com'}><IconSMS/><div style={{marginLeft: '8px'}}>support@adtbot.com</div></a></li>
                                 </ul>
                             </div>
                         </div>

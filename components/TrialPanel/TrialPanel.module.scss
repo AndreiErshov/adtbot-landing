@@ -1,0 +1,31 @@
+.wrapper {
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F8D7DA;
+    border-radius: 8px;
+    width: 100%;
+    z-index: 10;
+    
+
+    .body {
+        color: #721C24;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 620px) {
+    .wrapper {
+        flex-wrap: wrap;
+        .body {
+            width: 100%;
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+}

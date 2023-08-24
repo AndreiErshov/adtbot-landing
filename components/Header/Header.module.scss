@@ -8,7 +8,7 @@
     left: 0;
     width: 100%;
     background-color: #fff;
-    z-index: 1000;
+    z-index: 5;
 
     .in {
         padding: 35px 0;
@@ -111,6 +111,9 @@
             }
 
             .action {
+                .item {
+                    display: none;
+                }
 
                 .item.burger {
                     display: block;
@@ -174,7 +177,6 @@
 
             .top {
                 .main {
-                    margin-bottom: 20px;
                     .lang {
                         display: none;
                     }

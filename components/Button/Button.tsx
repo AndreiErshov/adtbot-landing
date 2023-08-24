@@ -13,7 +13,8 @@ const Button:FC<buttonPropsTypes> = ({
     style,
     fill,
     load,
-    rounded
+    rounded,
+    className = '',
 }) => {
 
     const switchVariant = (variant: buttonVariants | undefined) => {
@@ -26,6 +27,8 @@ const Button:FC<buttonPropsTypes> = ({
                 return styles.simple
             case 'danger':
                 return styles.danger
+            case 'footer':
+                return styles.footer
             default:
                 return ''
         }
@@ -50,7 +53,7 @@ const Button:FC<buttonPropsTypes> = ({
         <button 
             disabled={disabled}
             onClick={onClick}
-            className={`${styles.button} ${switchVariant(variant)} ${fill ? styles.fill : ''} ${load ? styles.load : ''} ${rounded ? styles.rounded : ''}`}
+            className={`${className} ${styles.button} ${switchVariant(variant)} ${fill ? styles.fill : ''} ${load ? styles.load : ''} ${rounded ? styles.rounded : ''}`}
             style={style}
             >
             <div className={styles.loader}>

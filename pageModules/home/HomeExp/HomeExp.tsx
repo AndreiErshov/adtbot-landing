@@ -2,8 +2,8 @@ import Container from '@/components/Container/Container';
 import styles from './HomeExp.module.scss';
 import Image from 'next/image';
 import img1 from '@/public/assets/home-exp-1.png'
-import img2 from '@/public/assets/home-exp-2.png'
-import img3 from '@/public/assets/home-exp-3.png'
+import img2 from '@/public/assets/home-exp-2.svg'
+import img3 from '@/public/assets/home-exp-3.svg'
 
 const HomeExp = () => {
 

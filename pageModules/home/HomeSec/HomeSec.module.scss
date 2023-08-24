@@ -4,7 +4,7 @@
     
     .in {
         padding: 50px 20px;
-        padding-right: 50px;
+        padding-right: 100px;
         background-color: var(--blue);
         border-radius: 18px;    
         display: flex;
@@ -13,6 +13,7 @@
 
         .img {
             flex: 0 0 435px;
+            margin: 0 auto;
 
             img {
                 width: 100%;
@@ -22,7 +23,7 @@
             }
         }
         .body {
-            width: 100%;
+            width: 500px;
             color: #fff;
             padding-left: 40px;
 
@@ -49,7 +50,7 @@
                 width: 100%;
             }
             .body {
-                
+                width: 100%;
             }
         }
     }
@@ -63,6 +64,7 @@
             padding: 20px;
 
             .body {
+                width: 100%;
                 padding: 0;
 
                 .title {

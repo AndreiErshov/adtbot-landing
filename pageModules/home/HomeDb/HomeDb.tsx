@@ -1,12 +1,17 @@
+import {Pagination} from "swiper";
+import {Swiper, SwiperSlide} from 'swiper/react';
+import 'swiper/scss';
+import 'swiper/scss/pagination';
 import styles from './HomeDb.module.scss';
 import Container from '@/components/Container/Container';
-import {Swiper, SwiperSlide} from 'swiper/react';
 import Image from 'next/image';
-import img1 from '@/public/assets/db-1.png';
-import img2 from '@/public/assets/db-2.png';
-import img3 from '@/public/assets/db-3.png';
+import img1 from '@/public/assets/home-look-7.jpg';
+import img2 from '@/public/assets/home-look-8.jpg';
+import img3 from '@/public/assets/home-look-9.jpg';
+import img4 from '@/public/assets/home-look-10.jpg';
 import IconButton from '@/components/IconButton/IconButton';
 import {AiOutlineZoomIn} from 'react-icons/ai';
+import { Fancybox as NativeFancybox } from "@fancyapps/ui";
 
 
 const HomeDb = () => {
@@ -23,6 +28,10 @@ const HomeDb = () => {
                         <Swiper
                             slidesPerView={1}
                             spaceBetween={25}
+                            modules={[Pagination]}
+                            navigation
+                            pagination={{ clickable: true }}
+                            scrollbar={{ draggable: true }}
                             breakpoints={{
                                 1200: {
                                     slidesPerView: 3
@@ -35,11 +44,12 @@ const HomeDb = () => {
                             >
                             <SwiperSlide className={styles.slide}>
                                 <div className={styles.action}>
-                                    <button className={styles.item}>
+                                    <div className={styles.item}>
                                     <IconButton
                                         icon={<AiOutlineZoomIn size={20}/>}
+                                        onClick={() => NativeFancybox.show([{src: img1.src}])}
                                         />
-                                    </button>
+                                    </div>
                                 </div>
                                 <Image
                                     src={img1}
@@ -49,11 +59,12 @@ const HomeDb = () => {
                             </SwiperSlide>
                             <SwiperSlide className={styles.slide}>
                                 <div className={styles.action}>
-                                    <button className={styles.item}>
+                                    <div className={styles.item}>
                                     <IconButton
                                         icon={<AiOutlineZoomIn size={20}/>}
+                                        onClick={() => NativeFancybox.show([{src: img2.src}])}
                                         />
-                                    </button>
+                                    </div>
                                 </div>
                                 <Image
                                     src={img2}
@@ -63,11 +74,12 @@ const HomeDb = () => {
                             </SwiperSlide>
                             <SwiperSlide className={styles.slide}>
                                 <div className={styles.action}>
-                                    <button className={styles.item}>
+                                    <div className={styles.item}>
                                     <IconButton
                                         icon={<AiOutlineZoomIn size={20}/>}
+                                        onClick={() => NativeFancybox.show([{src: img3.src}])}
                                         />
-                                    </button>
+                                    </div>
                                 </div>
                                 <Image
                                     src={img3}
@@ -77,14 +89,15 @@ const HomeDb = () => {
                             </SwiperSlide>
                             <SwiperSlide className={styles.slide}>
                                 <div className={styles.action}>
-                                    <button className={styles.item}>
+                                    <div className={styles.item}>
                                     <IconButton
                                         icon={<AiOutlineZoomIn size={20}/>}
+                                        onClick={() => NativeFancybox.show([{src: img4.src}])}
                                         />
-                                    </button>
+                                    </div>
                                 </div>
                                 <Image
-                                    src={img1}
+                                    src={img4}
                                     alt=''
                                     placeholder='blur'
                                     />

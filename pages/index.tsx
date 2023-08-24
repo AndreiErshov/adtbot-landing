@@ -11,7 +11,7 @@ import HomePricing from '@/pageModules/home/HomePricing/HomePricing';
 import HomeSec from '@/pageModules/home/HomeSec/HomeSec';
 import HomeFaq from '@/pageModules/home/HomeFaq/HomeFaq';
 import HomeDb from '@/pageModules/home/HomeDb/HomeDb';
-
+import Divider from '@/components/Divider/Divider';
 
 const HomePage:FC = () => {
     return (
@@ -43,6 +43,7 @@ const HomePage:FC = () => {
             <section>
                 <HomeSec/>
             </section>
+            {/*<Divider/>*/}
             <section>
                 <HomeFaq/>
             </section>

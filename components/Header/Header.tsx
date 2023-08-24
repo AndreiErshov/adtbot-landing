@@ -7,16 +7,18 @@ import logo from '@/public/assets/logo.svg';
 import Button from "../Button/Button";
 import Sidebar from "../Sidebar/Sidebar";
 import { useRouter } from "next/router";
+import { getCookie } from 'typescript-cookie'
 
 
 const Header:FC = () => {
     const router = useRouter()
     const [shadow, setShadow] = useState(false)
     const [sidebarOpen, setSidebarOpen] = useState(false)
-    
+    let isAuthorized = false
 
     useEffect(() => {
         setSidebarOpen(false)
+        isAuthorized = typeof window === "undefined" ? false : getCookie('adtbot-console-access-token') !== undefined
     }, [router])
 
     const toggleHeader = () => {
@@ -36,10 +38,8 @@ const Header:FC = () => {
 
     return (
         <>
-              <Sidebar open={sidebarOpen}/>
-              <header className={`${styles.wrapper} ${shadow ? styles.shadow : ''}`}>
-          
-
+          <Sidebar open={sidebarOpen}/>
+          <header className={`${styles.wrapper} ${shadow ? styles.shadow : ''}`}>
           <Container>
               <div className={styles.in}>
                   <div className={styles.top}>
@@ -71,15 +71,15 @@ const Header:FC = () => {
                   <div className={styles.action}>
                       <div className={styles.item}>
                           <Button 
-                              onClick={() => window.open('https://adtbot-web.netlify.app/auth/login', '_blank')}
-                              text="Вход" 
+                              onClick={isAuthorized ? () => window.open('https://console.adtbot.com/auth/logout', '_blank') : () => window.open('https://console.adtbot.com/auth/login', '_blank')}
+                              text={isAuthorized ? "Выйти" : "Вход"} 
                               variant={'simple'} 
                               style={{padding: '16px 25px', border: 'none'}}/>
                       </div>
                       <div className={styles.item}>
                           <Button 
-                              onClick={() => window.open('https://adtbot-web.netlify.app/', '_blank')}
-                              text="Регистрация" 
+                              onClick={() => window.open('https://console.adtbot.com/', '_blank')}
+                              text={isAuthorized ? "Личный кабинет" : "Регистрация"} 
                               variant={'blue'} 
                               style={{padding: '16px 25px'}}/>
                       </div>
@@ -103,14 +103,14 @@ const Header:FC = () => {
                       <div className={styles.action}>
                           <div className={styles.item}>
                               <Button 
-                                  onClick={() => window.open('https://adtbot-web.netlify.app/', '_blank')}
+                                  onClick={() => window.open('https://console.adtbot.com/auth/login', '_blank')}
                                   text="Вход" 
                                   variant={'simple'} 
                                   style={{padding: '16px 25px', border: 'none'}}/>
                           </div>
                           <div className={styles.item}>
                               <Button 
-                                  onClick={() => window.open('https://adtbot-web.netlify.app/', '_blank')}
+                                  onClick={() => window.open('https://console.adtbot.com/auth/join', '_blank')}
                                   text="Регистрация" 
                                   variant={'blue'} 
                                   style={{padding: '16px 25px'}}/>

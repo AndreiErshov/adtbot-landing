@@ -1,7 +1,7 @@
 import styles from './HomeFaq.module.scss';
 import Container from '@/components/Container/Container';
-import Item from './components/Item/Item';
-import { faqItemPropsType } from './types';
+import FaqItem from '@/components/FaqItem/FaqItem';
+import { faqItemPropsType } from '@/components/FaqItem/types';
 import {FC, useState, useEffect} from 'react';
 
 const list = [
@@ -120,7 +120,7 @@ const HomeFaq = () => {
                     <div className={styles.body}>
                         {
                             list?.map((item, index) => (
-                                <Item 
+                                <FaqItem 
                                     {...item}
                                     activeId={activeId}
                                     setActiveId={setActiveId}

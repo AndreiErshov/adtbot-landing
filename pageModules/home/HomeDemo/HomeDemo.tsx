@@ -2,13 +2,15 @@ import styles from './HomeDemo.module.scss';
 import Container from '@/components/Container/Container';
 import {Swiper, SwiperRef, SwiperSlide} from 'swiper/react';
 import Image from 'next/image';
-import img1 from '@/public/assets/home-demo-1.png';
+import img1 from '@/public/assets/home-demo-1.svg';
+import img2 from '@/public/assets/home-demo-2.svg';
 import IconButton from '@/components/IconButton/IconButton';
 import SliderNav from '@/components/SliderNav/SliderNav';
 import { useRef, useState } from 'react';
 import { SwiperOptions } from 'swiper';
 import {HiOutlineExternalLink} from 'react-icons/hi';
 import {IoPlayOutline} from 'react-icons/io5';
+import IconExport from '@/icons/IconExport';
 
 const HomeDemo = () => {
     const [swiper, setSwiper] = useState<any>(null)
@@ -36,16 +38,12 @@ const HomeDemo = () => {
                         </div>
                         
                         <div className={styles.action}>
-                            <div className={styles.pop}>
-                                <span><IoPlayOutline/></span>
-                                Видеопрезентация бота
-                            </div>
                             <div className={styles.demo}>
                                 <div className={styles.head}>Демо-доступ</div>
                                 <div className={styles.text}>
                                     <a href="#" target={'_blank'}>
                                     Хотите рассмотреть более подробно? <br/>
-                                    Пожалуйста! <span><HiOutlineExternalLink/></span>
+                                    Пожалуйста! <span><IconExport color="#6f91ee" size={12}/></span>
                                     </a>
                                 </div>
                             </div>
@@ -67,7 +65,7 @@ const HomeDemo = () => {
                                 <Image src={img1} alt=''/>
                             </SwiperSlide>
                             <SwiperSlide className={styles.slide}>
-                                <Image src={img1} alt=''/>
+                                <Image src={img2} alt=''/>
                             </SwiperSlide>
                         </Swiper>
                     </div>

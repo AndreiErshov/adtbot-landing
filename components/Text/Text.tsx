@@ -15,9 +15,9 @@ const Text = (props: textPropsTypes) => {
                 ) : null
             }
             <textarea
-                className={`${styles.input} ${!resize ? styles.nonresize : ''}`} 
+                className={`${styles.input} ${!resize ? styles.nonresize : styles.resize}`} 
                 {...props}   
-                style={{height: height}}    
+                style={{height: height, minHeight: height}}    
                 />
             {
                 errorText ? (

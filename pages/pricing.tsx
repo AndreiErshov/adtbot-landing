@@ -1,6 +1,6 @@
 import PageLayout from "@/components/PageLayout/PageLayout"
 import HomePricing from "@/pageModules/home/HomePricing/HomePricing";
-import HomeFaq from "@/pageModules/home/HomeFaq/HomeFaq";
+import HomeTariffFaq from "@/pageModules/home/HomeTariffFaq/HomeTariffFaq";
 
 
 
@@ -12,7 +12,7 @@ const PricingPage = () => {
                 <HomePricing/>
             </section>
             <section>
-                <HomeFaq/>
+                <HomeTariffFaq/>
             </section>
         </PageLayout>
     )

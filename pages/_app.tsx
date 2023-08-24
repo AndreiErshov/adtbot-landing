@@ -10,6 +10,8 @@ import {useEffect, useState} from 'react';
 import { AnimatePresence } from 'framer-motion';
 import ExitModal from '@/modals/ExitModal/ExitModal';
 import GuideModal from '@/modals/GuideModal/GuideModal';
+import FancyboxWrapper from '@/components/FancyboxWrapper/FancyboxWrapper';
+import '@/pages/normalize.css';
 
 NProgress.configure({ showSpinner: false })
 Router.events.on('routeChangeStart', () => NProgress.start()); 
@@ -46,7 +48,7 @@ export default function App({ Component, pageProps }: AppProps) {
   })
 
   return (
-    <>
+    <FancyboxWrapper options={{ infinite: false, autoFocus: false }}>
       <Component {...pageProps} />
       <ExitModal  
         open={exit}
@@ -66,6 +68,6 @@ export default function App({ Component, pageProps }: AppProps) {
       </AnimatePresence>
       
       
-    </>
+    </FancyboxWrapper>
   )
 }

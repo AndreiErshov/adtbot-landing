@@ -1,7 +1,7 @@
 import styles from './Fb.module.scss';
 import Container from '@/components/Container/Container';
 import Image from 'next/image';
-import img from '@/public/assets/fb.png';
+import img from '@/public/assets/fb.svg';
 import Button from '@/components/Button/Button';
 
 const Fb = () => {
@@ -15,6 +15,7 @@ const Fb = () => {
                             src={img}
                             alt=''
                             placeholder='blur'
+                            blurDataURL={img.src}
                             />
                     </div>
                     <div className={styles.body}>
@@ -28,9 +29,9 @@ const Fb = () => {
                         </div>
                         <div className={styles.action}>
                             <Button
-                                onClick={() => window.open('https://console.adtbot.com/auth/join', '_blank')}
+                                onClick={() => window.open('https://console.adtbot.com/', '_blank')}
                                 text='Попробовать бесплатно'
-                                variant={'blue'}
+                                variant={'footer'}
                                 />
                         </div>
                     </div>

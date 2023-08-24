@@ -1,5 +1,5 @@
 
-export type buttonVariants = 'default' | 'blue' | 'simple' | 'danger'
+export type buttonVariants = 'default' | 'blue' | 'simple' | 'danger' | 'footer'
 
 export type buttonPropsTypes = {
     text?: string,
@@ -11,5 +11,6 @@ export type buttonPropsTypes = {
     style?: React.CSSProperties,
     fill?: boolean,
     load?: boolean,
-    rounded?: boolean
+    rounded?: boolean,
+    className?: string
 }

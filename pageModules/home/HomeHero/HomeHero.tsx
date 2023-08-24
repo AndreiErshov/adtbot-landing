@@ -3,7 +3,7 @@ import {FC} from 'react';
 import Container from '@/components/Container/Container';
 import Button from '@/components/Button/Button';
 import Image from 'next/image';
-import img from '@/public/assets/hero-img.png';
+import img from '@/public/assets/hero-img.svg';
 import Router from 'next/router';
 const HomeHero:FC = () => {
     
@@ -21,8 +21,8 @@ const HomeHero:FC = () => {
                             </p>
                         </div>
                         <div className={styles.action}>
-                            <div className={styles.item}><Button onClick={() => window.open('https://adtbot-web.netlify.app/', '_blank')} text='Бесплатный доступ' variant={'default'}/></div>
-                            <div className={styles.item}><Button onClick={() => Router.push('/demo')} text='Посмотреть демо' variant='simple'/></div>
+                            <div className={styles.item}><Button className={styles.button_style} onClick={() => window.open('https://adtbot-web.netlify.app/', '_blank')} text='Бесплатный доступ' variant={'default'}/></div>
+                            <div className={styles.item}><Button className={styles.button_style} onClick={() => Router.push('https://adtbot.com/demo')} text='Посмотреть демо' variant='simple'/></div>
                         </div>
                     </div>
                     <div className={`${styles.img} ${styles.part}`}>

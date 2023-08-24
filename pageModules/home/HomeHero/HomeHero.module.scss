@@ -4,7 +4,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 30px 0;
         padding-top: 50px;
 
         .part {
@@ -53,13 +52,13 @@
 
             .action {
                 display: flex;
-                align-items: center;
-                margin-left: -5px;
-                margin-right: -5px;
+                justify-content: space-between;
+                max-width: 409px;
 
                 .item {
-                    margin: 0 5px;
-
+                    .button_style {
+                        padding: 16px 25px;
+                    }
                 }
             }
         }
@@ -122,6 +121,9 @@
             // }
 
             .img {
+                margin-top: 17px;
+                margin-bottom: 23px;
+
                 &:after, &::before {
                     display: none;
                 }
@@ -134,6 +136,14 @@
 
     .wrapper {
         .in {
+            .img {
+                margin-top: 17px;
+                margin-bottom: 23px;
+                
+                &:after, &::before {
+                    display: none;
+                }
+            }
             .body {
                 margin-bottom: 15px;
                 .title {
@@ -146,6 +156,18 @@
                 }
                 .action {
                     justify-content: center;
+                    margin: 0 auto;
+
+                    .item {
+                        flex-grow: 1;
+                        .button_style {
+                            width: 162px;
+                            margin: 0 auto;
+                        }
+                        .button_style > div {
+                            overflow: visible !important;
+                        }
+                    }
                 }
             }
         }

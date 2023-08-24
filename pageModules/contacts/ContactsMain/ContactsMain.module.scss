@@ -1,6 +1,6 @@
 .wrapper {
     .in {
-        padding: 50px 0;
+        padding: 20px 0 15px;
         display: flex;
         align-self: flex-start;
         margin-left: -20px;
@@ -69,6 +69,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                flex-wrap: wrap;
 
                 .captcha {
 
@@ -112,7 +113,11 @@
                 }
 
                 .action {
-                    justify-content: flex-start;
+                    justify-content: center;
+                }
+
+                .action > * {
+                    margin-top: 10px;
                 }
             }
 

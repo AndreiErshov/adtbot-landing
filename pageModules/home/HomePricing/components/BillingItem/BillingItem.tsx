@@ -31,8 +31,11 @@ const BillingItem:FC<billingItemPropsTypes> = ({
                     }
                     <Col span={24}>
                         <div className={styles.price}>
-                            <span>${price}</span> / месяц
+                            <span>₮{price}</span> / месяц
                         </div>
+                    </Col>
+                    <Col span={24}>
+                        <div className={styles.head}>Первые 14 дней после регистрации доступен полный функционал тарифа Premium</div>
                     </Col>
                     <Col span={24}>
                         <h3 className={styles.title}>
@@ -79,7 +82,7 @@ const BillingItem:FC<billingItemPropsTypes> = ({
                             onClick={() => window.open('https://console.adtbot.com/auth/join', '_blank')}
                             disabled={isCurrent}
                             load={load}
-                            text={isCurrent ? 'Текущий тариф' : 'Выбрать тариф'}
+                            text={isCurrent ? 'Текущий тариф' : 'Попробовать бесплатно'}
                             variant={isTop ? 'default' : 'blue'}
                             fill
                             />

@@ -1,7 +1,7 @@
 import styles from './HomeSec.module.scss';
 import Container from '@/components/Container/Container';
 import Image from 'next/image';
-import img from '@/public/assets/home-sec.png';
+import img from '@/public/assets/home-sec.svg';
 
 const HomeSec = () => {
 

@@ -34,61 +34,61 @@ const HomeExchange = () => {
                             <div className={styles.list}>
                                 <Row gutter={[15,15]}>
                                     <Col span={12}>
-                                        <a href="" className={styles.item}>
+                                        <a href="http://adtbot.com/binance" className={styles.item}>
                                             <div className={styles.icon}><Image src={binance} alt=''/></div>
                                             <div className={styles.label}>Binance</div>
                                         </a>
                                     </Col>
                                     <Col span={12}>
-                                        <a href="" className={styles.item}>
+                                        <a href="http://adtbot.com/bitfinex" className={styles.item}>
                                             <div className={styles.icon}><Image src={bitfinex} alt=''/></div>
                                             <div className={styles.label}>Bitfinex</div>
                                         </a>
                                     </Col>
                                     <Col span={12}>
-                                        <a href="" className={styles.item}>
+                                        <a href="https://coinbase.com" className={styles.item}>
                                             <div className={styles.icon}><Image src={coinbase} alt=''/></div>
                                             <div className={styles.label}>Coinbase</div>
                                         </a>
                                     </Col>
                                     <Col span={12}>
-                                        <a href="" className={styles.item}>
+                                        <a href="http://adtbot.com/okx" className={styles.item}>
                                             <div className={styles.icon}><Image src={okx} alt=''/></div>
                                             <div className={styles.label}>OKX</div>
                                         </a>
                                     </Col>
                                     <Col span={12}>
-                                        <a href="" className={styles.item}>
+                                        <a href="https://www.kraken.com" className={styles.item}>
                                             <div className={styles.icon}><Image src={kraken} alt=''/></div>
                                             <div className={styles.label}>Kraken</div>
                                         </a>
                                     </Col>
                                     <Col span={12}>
-                                        <a href="" className={styles.item}>
+                                        <a href="http://adtbot.com/bybit" className={styles.item}>
                                             <div className={styles.icon}><Image src={bybit} alt=''/></div>
                                             <div className={styles.label}>Bybit</div>
                                         </a>
                                     </Col>
                                     <Col span={12}>
-                                        <a href="" className={styles.item}>
+                                        <a href="http://adtbot.com/kucoin" className={styles.item}>
                                             <div className={styles.icon}><Image src={kucoin} alt=''/></div>
                                             <div className={styles.label}>KuCoin</div>
                                         </a>
                                     </Col>
                                     <Col span={12}>
-                                        <a href="" className={styles.item}>
+                                        <a href="https://upbit.com" className={styles.item}>
                                             <div className={styles.icon}><Image src={upbit} alt=''/></div>
                                             <div className={styles.label}>Upbit</div>
                                         </a>
                                     </Col>
                                     <Col span={12}>
-                                        <a href="" className={styles.item}>
+                                        <a href="https://www.bitstamp.net" className={styles.item}>
                                             <div className={styles.icon}><Image src={bitstamp} alt=''/></div>
                                             <div className={styles.label}>Bitstamp</div>
                                         </a>
                                     </Col>
                                     <Col span={12}>
-                                        <a href="" className={styles.item}>
+                                        <a href="http://adtbot.com/huobi" className={styles.item}>
                                             <div className={styles.icon}><Image src={huobi} alt=''/></div>
                                             <div className={styles.label}>Huobi</div>
                                         </a>
@@ -101,25 +101,25 @@ const HomeExchange = () => {
                             <div className={styles.list}>
                                 <Row gutter={[15,15]}>
                                     <Col span={24}>
-                                        <a href="" className={styles.item}>
+                                        <a href="http://adtbot.com/gate" className={styles.item}>
                                             <div className={styles.icon}><Image src={gate} alt=''/></div>
                                             <div className={styles.label}>Gate</div>
                                         </a>
                                     </Col>
                                     <Col span={24}>
-                                        <a href="" className={styles.item}>
+                                        <a href="http://adtbot.com/mexc" className={styles.item}>
                                             <div className={styles.icon}><Image src={mexc} alt=''/></div>
                                             <div className={styles.label}>MEXC</div>
                                         </a>
                                     </Col>
                                     <Col span={24}>
-                                        <a href="" className={styles.item}>
+                                        <a href="http://adtbot.com/kucoin" className={styles.item}>
                                             <div className={styles.icon}><Image src={kucoin} alt=''/></div>
                                             <div className={styles.label}>KuCoin</div>
                                         </a>
                                     </Col>
                                     <Col span={24}>
-                                        <a href="" className={styles.item}>
+                                        <a href="http://adtbot.com/huobi" className={styles.item}>
                                             <div className={styles.icon}><Image src={huobi} alt=''/></div>
                                             <div className={styles.label}>Huobi</div>
                                         </a>

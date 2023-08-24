@@ -31,16 +31,16 @@ const list: billingItemPropsTypes[] = [
             {
                 head: 'Мониторинг анонсов листингов на 1 бирже:',
                 ul: [
-                    {link: '/', label: 'Binance', icon: binance}
+                    {link: 'http://adtbot.com/binance', label: 'Binance', icon: binance}
                 ]
             },
             {
                 head: 'Покупка на 4 биржах:',
                 ul: [
-                    {link: '/', label: 'Gate', icon: gate},
-                    {link: '/', label: 'MEXC', icon: mexc},
-                    {link: '/', label: 'KuCoin', icon: kucoin},
-                    {link: '/', label: 'Huobi', icon: huobi},
+                    {link: 'http://adtbot.com/gate', label: 'Gate', icon: gate},
+                    {link: 'http://adtbot.com/mexc', label: 'MEXC', icon: mexc},
+                    {link: 'http://adtbot.com/kucoin', label: 'KuCoin', icon: kucoin},
+                    {link: 'http://adtbot.com/huobi', label: 'Huobi', icon: huobi},
                 ]
             }
         ],
@@ -50,23 +50,23 @@ const list: billingItemPropsTypes[] = [
         isTop: false,
         title: 'Standart',
         isCurrent: false,
-        price: 10,
+        price: 9,
         list: [
             {
                 head: 'Мониторинг анонсов листингов на 3 биржах:',
                 ul: [
-                    {link: '/', label: 'Binance', icon: binance},
-                    {link: '/', label: 'Coinbase', icon: coinbase},
-                    {link: '/', label: 'Huobi', icon: huobi},
+                    {link: 'http://adtbot.com/binance', label: 'Binance', icon: binance},
+                    {link: 'https://coinbase.com/', label: 'Coinbase', icon: coinbase},
+                    {link: 'http://adtbot.com/huobi', label: 'Huobi', icon: huobi},
                 ]
             },
             {
                 head: 'Покупка на 4 биржах:',
                 ul: [
-                    {link: '/', label: 'Gate', icon: gate},
-                    {link: '/', label: 'MEXC', icon: mexc},
-                    {link: '/', label: 'KuCoin', icon: kucoin},
-                    {link: '/', label: 'Huobi', icon: huobi},
+                    {link: 'http://adtbot.com/gate', label: 'Gate', icon: gate},
+                    {link: 'http://adtbot.com/mexc', label: 'MEXC', icon: mexc},
+                    {link: 'http://adtbot.com/kucoin', label: 'KuCoin', icon: kucoin},
+                    {link: 'http://adtbot.com/huobi', label: 'Huobi', icon: huobi},
                 ]
             }
         ]
@@ -76,25 +76,25 @@ const list: billingItemPropsTypes[] = [
         isTop: true,
         title: 'Pro',
         isCurrent: false,
-        price: 20,
+        price: 19,
         list: [
             {
                 head: 'Мониторинг анонсов листингов на 5 биржах:',
                 ul: [
-                    {link: '/', label: 'Binance', icon: binance},
-                    {link: '/', label: 'Coinbase', icon: coinbase},
-                    {link: '/', label: 'Huobi', icon: huobi},
-                    {link: '/', label: 'KuCoin', icon: kucoin},
-                    {link: '/', label: 'OKX', icon: okx},
+                    {link: 'http://adtbot.com/binance', label: 'Binance', icon: binance},
+                    {link: 'https://coinbase.com/', label: 'Coinbase', icon: coinbase},
+                    {link: 'http://adtbot.com/huobi', label: 'Huobi', icon: huobi},
+                    {link: 'http://adtbot.com/kucoin', label: 'KuCoin', icon: kucoin},
+                    {link: 'http://adtbot.com/okx', label: 'OKX', icon: okx},
                 ]
             },
             {
                 head: 'Покупка на 4 биржах:',
                 ul: [
-                    {link: '/', label: 'Gate', icon: gate},
-                    {link: '/', label: 'MEXC', icon: mexc},
-                    {link: '/', label: 'KuCoin', icon: kucoin},
-                    {link: '/', label: 'Huobi', icon: huobi},
+                    {link: 'http://adtbot.com/gate', label: 'Gate', icon: gate},
+                    {link: 'http://adtbot.com/mexc', label: 'MEXC', icon: mexc},
+                    {link: 'http://adtbot.com/kucoin', label: 'KuCoin', icon: kucoin},
+                    {link: 'http://adtbot.com/huobi', label: 'Huobi', icon: huobi},
                 ]
             }
         ]
@@ -104,30 +104,30 @@ const list: billingItemPropsTypes[] = [
         isTop: false,
         title: 'Premium',
         isCurrent: false,
-        price: 30,
+        price: 29,
         list: [
             {
                 head: 'Мониторинг анонсов листингов на 10 биржах:',
                 ul: [
-                    {link: '/', label: 'Binance', icon: binance},
-                    {link: '/', label: 'Coinbase', icon: coinbase},
-                    {link: '/', label: 'Huobi', icon: huobi},
-                    {link: '/', label: 'KuCoin', icon: kucoin},
-                    {link: '/', label: 'OKX', icon: okx},
-                    {link: '/', label: 'Kraken', icon: kraken},
-                    {link: '/', label: 'Bitstamp', icon: bitstamp},
-                    {link: '/', label: 'Bitfinex', icon: bitfinex},
-                    {link: '/', label: 'Bybit', icon: bybit},
-                    {link: '/', label: 'Upbit', icon: upbit},
+                    {link: 'http://adtbot.com/binance', label: 'Binance', icon: binance},
+                    {link: 'https://coinbase.com/', label: 'Coinbase', icon: coinbase},
+                    {link: 'http://adtbot.com/huobi', label: 'Huobi', icon: huobi},
+                    {link: 'http://adtbot.com/kucoin', label: 'KuCoin', icon: kucoin},
+                    {link: 'http://adtbot.com/okx', label: 'OKX', icon: okx},
+                    {link: 'https://www.kraken.com/', label: 'Kraken', icon: kraken},
+                    {link: 'https://www.bitstamp.net/', label: 'Bitstamp', icon: bitstamp},
+                    {link: 'http://adtbot.com/bitfinex', label: 'Bitfinex', icon: bitfinex},
+                    {link: 'http://adtbot.com/bybit', label: 'Bybit', icon: bybit},
+                    {link: 'https://upbit.com/', label: 'Upbit', icon: upbit},
                 ]
             },
             {
                 head: 'Покупка на 4 биржах:',
                 ul: [
-                    {link: '/', label: 'Gate', icon: gate},
-                    {link: '/', label: 'MEXC', icon: mexc},
-                    {link: '/', label: 'KuCoin', icon: kucoin},
-                    {link: '/', label: 'Huobi', icon: huobi},
+                    {link: 'http://adtbot.com/gate', label: 'Gate', icon: gate},
+                    {link: 'http://adtbot.com/mexc', label: 'MEXC', icon: mexc},
+                    {link: 'http://adtbot.com/kucoin', label: 'KuCoin', icon: kucoin},
+                    {link: 'http://adtbot.com/huobi', label: 'Huobi', icon: huobi},
                 ]
             }
         ]
